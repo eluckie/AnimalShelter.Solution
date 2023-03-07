@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.Models;
+using AnimalShelter.Models;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace AnimalShelter.Controllers
 {
-  public class BreedsController : Controller
+  public class AnimalsController : Controller
   {
     
   }

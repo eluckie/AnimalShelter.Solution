@@ -1,0 +1,27 @@
+@{
+  Layout = "_Layout";
+}
+
+@model AnimalShelter.Models.Shelter
+@using AnimalShelter.Models
+
+<h2>@Html.DisplayFor(model => model.Name) Shelter Details</h2>
+
+@if (Model.Animals.Count == 0)
+{
+  <h5>No animals have been added to this @Html.DisplayNameFor(model => model.Name) shelter yet!</h5>
+}
+else
+{
+  <h3>Current shelter residents:</h3>
+  <ul>
+    @foreach (Animal animal in Model.Animals)
+    {
+      <li>@Html.ActionLink($"{animal.Name}", "Details", "Animals", new { id = animal.AnimalId})</li>
+    }
+  </ul>
+}
+<p>@Html.ActionLink("Add New Animal", "Create", "Animals")</p>
+<p>@Html.ActionLink("Edit Shelter", "Edit", new { id = Model.ShelterId})</p>
+<p>@Html.ActionLink("Delete Shelter", "Delete", new { id = Model.ShelterId})</p>
+<p>@Html.ActionLink("Back to list", "Index")</p>

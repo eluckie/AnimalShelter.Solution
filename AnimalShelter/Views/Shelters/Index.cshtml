@@ -1,0 +1,16 @@
+@{
+  Layout = "_Layout";
+}
+
+@using AnimalShelter.Models;
+
+<h1>Shelters</h1>
+<ul>
+  @foreach(Shelter shelter in Model)
+  {
+    <li>@Html.ActionLink($"{shelter.Name}", "Details", new { id = shelter.ShelterId})</li>
+  }
+</ul>
+
+<p>@Html.ActionLink("Add new shelter", "Create")</p>
+<p>@Html.ActionLink("Home", "Index", "Home")</p>

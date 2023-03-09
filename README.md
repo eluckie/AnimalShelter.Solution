@@ -9,6 +9,8 @@
 * C#
 * .NET 7.0
 * EF Core 7.0
+* MySQL Workbench
+* LINQ
 * HTML
 * Markdown
 * Git
@@ -25,12 +27,17 @@ A program for an animal shelter to track the animals in their facility based on 
 ## Setup/Installation Requirements
 
 1. Clone this repository to your desktop
-2. In your computer's terminal, navigate to the production level of this directory called _AnimalShelter_
+2. In your computer's terminal, navigate to the production level of this directory called _**AnimalShelter**_
 3. In the command line, run the command ``dotnet watch run`` to compile and execute the webpage in Development mode
 * Optionally, you can run the command ``dotnet build`` to compile the program without running it
 
-### Recreate Database
-_**{ADD INSTRUCTIONS FOR CREATING APPSETTINGS.JSON}**_
+### Recreating the Database
+1. Within the production level of this directory, called _**AnimalShelter**_, create a new file called **appsettings.json**
+2. Input the following code into your _**appsettings.json**_ file
+_**{ADD SCREENSHOT OF APPSETTINGS CODE}**_
+* replace _[ YOUR-DB-NAME ]_ with the name of the database you just created in MySQL Workbench
+* replace _[ YOUR-USER-HERE ]_ with your username for MySQL Workbench
+* replace _[ YOUR-PASSWORD-HERE ]_ with your password for MySQL Workbench
 
 ### Flow Chart
 _**{ADD SCREENSHOT OF FLOW CHART}**_
